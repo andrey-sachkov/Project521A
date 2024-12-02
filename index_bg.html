@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект Демонстрация</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="Drone.mp4" type="video/mp4">
+            Вашият браузър не поддържа видео таг.
+        </video>
+    </div>
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">Проект Демонстрация</h1>
+    </header>
+    <div class="navbar">
+        <a href="index.html">Начало</a>
+        <div class="dropdown">
+            <button class="dropbtn">Седмици 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="week1-bg.html">Седмица 1</a>
+                <a href="week2-bg.html">Седмица 2</a>
+                <a href="week3-bg.html">Седмица 3</a>
+            </div>
+        </div>
+        <div class="dropdown" style="float: right;">
+            <button class="dropbtn">Език 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html" id="en-btn">EN</a>
+                <a href="index-bg.html" id="bg-btn">BG</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="weekly-updates">
+            <h2 class="animate__animated animate__fadeInLeft">Седмични Актуализации</h2>
+            <div class="week animate__animated animate__fadeInUp">
+                <h3><a href="week1.html">Седмица 1</a></h3>
+                <p>Обобщение за Седмица 1...</p>
+            </div>
+            <div class="week animate__animated animate__fadeInUp">
+                <h3><a href="week2.html">Седмица 2</a></h3>
+                <p>Обобщение за Седмица 2...</p>
+            </div>
+            <div class="week animate__animated animate__fadeInUp">
+                <h3><a href="week3.html">Седмица 3</a></h3>
+                <p>Обобщение за Седмица 3...</p>
+            </div>
+        </section>
+        <section id="media-gallery">
+            <h2 class="animate__animated animate__fadeInLeft">Медия Галерия</h2>
+            <div class="gallery">
+                <div class="media-item animate__animated animate__zoomIn">
+                    <img src="images/DJI_0287.jpg" alt="Изображение 1">
+                </div>
+                <div class="media-item animate__animated animate__zoomIn">
+                    <img src="images/DJI_0282.jpg" alt="Изображение 2">
+                </div>
+                <div class="media-item animate__animated animate__zoomIn">
+                    <img src="images/DJI_0279.jpg" alt="Изображение 3">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <section id="video-gallery">
+            <h2 class="animate__animated animate__fadeInLeft">Видеа</h2>
+            <div class="video-container">
+                <div class="video animate__animated animate__zoomIn">
+                    <h3>Обкръжаващо Видео</h3>
+                    <iframe src="https://www.youtube.com/embed/td4xJidqukY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video animate__animated animate__zoomIn">
+                    <h3>Седмица 1</h3>
+                    <iframe src="https://www.youtube.com/embed/vacWjTMuMt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video animate__animated animate__zoomIn">
+                    <h3>Седмица 2</h3>
+                    <iframe src="https://www.youtube.com/embed/SVXfQgDslrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video animate__animated animate__zoomIn">
+                    <h3>Седмица 3</h3>
+                    <iframe src="https://www.youtube.com/embed/E0GmqJY5BAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2024 Проект Демонстрация</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
